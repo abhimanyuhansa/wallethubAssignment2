@@ -6,9 +6,10 @@
       <class name="uiautomation.Tests.SubmitReviewFlowTest">
         <methods>
           <include name="submitReview"/>
-          <include name="verifyReviewPosted"/>
           <include name="init"/>
           <include name="teardown"/>
+          <include name="rating"/>
+          <include name="starsGettingHighligthed"/>
         </methods>
       </class> <!-- uiautomation.Tests.SubmitReviewFlowTest -->
     </classes>

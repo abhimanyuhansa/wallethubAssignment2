@@ -29,11 +29,10 @@ public class Base {
 	static final String PROPERTY_FILE_PATH = "resources//prop.properties";
 	public static Properties prop;
 	static WebDriverWait w;
-	public static WebDriver driver; // should be static
+	public static WebDriver driver; 
 
 	public static Properties readProperties() throws IOException {
 
-		// keep it inside base class constructor
 		prop = new Properties();
 		FileInputStream file = new FileInputStream(PROPERTY_FILE_PATH);
 		prop.load(file);
@@ -64,8 +63,8 @@ public class Base {
 		}
 
 		driver.manage().window().maximize();
-		// driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT_TIMEOUT,
-		// TimeUnit.SECONDS); //not required recomended
+		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT_TIMEOUT,
+		TimeUnit.SECONDS); 
 		return driver;
 
 	}

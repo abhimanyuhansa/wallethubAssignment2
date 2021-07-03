@@ -7,7 +7,7 @@ import uiautomation.Common.Base;
 
 public class LoginPage extends Base {
 
-	// recreate using page factory 
+	
 	
 	private WebDriver driver;
 	private By username = By.cssSelector("#email");
@@ -17,7 +17,7 @@ public class LoginPage extends Base {
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-		//
+		
 	}
 
 	public void login(String url, String un, String pass) {
@@ -30,8 +30,5 @@ public class LoginPage extends Base {
 		System.out.println(driver.getTitle());
 
 	}
-
-	//private method returns elements
-	//then use those private methods in operations 
 
 }

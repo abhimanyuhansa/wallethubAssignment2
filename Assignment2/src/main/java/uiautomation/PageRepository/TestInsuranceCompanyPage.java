@@ -18,7 +18,7 @@ import uiautomation.Common.Base;
 
 public class TestInsuranceCompanyPage extends Base {
 
-	private WebDriver driver; // try to not initialize driver 
+	private WebDriver driver; 
 	private By stars = By.cssSelector(".rv.review-action.ng-enter-element>.rvs-svg>.rating-box-wrapper>.rvs-star-svg");
 	private By dropdown = By.cssSelector("div[class='dropdown second'] span[class='dropdown-placeholder']");
 	private By dropdownitems = By.cssSelector(
@@ -74,8 +74,7 @@ public class TestInsuranceCompanyPage extends Base {
 
 	public boolean submitReview(File reviewfile) throws IOException {
 		WebElement reviewbox = driver.findElement(reviewfield);
-		// reviewbox.click();
-		
+		reviewbox.click();
 		BufferedReader bf = new BufferedReader(new FileReader(reviewfile));
 		String reviewcontent = " ";
 
